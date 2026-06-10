@@ -8,21 +8,20 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
-
   const projects = [
     {
-      title: "Web Maintenance Specialist and Service Coordinator",
-      description: "Aircool Service",
+      title: "Spotify Next.js API Interface",
+      description: "React, Next.js, Express and Spotify Web API authentication flow.",
       imgUrl: projImg1,
     },
     {
-      title: "Hospitality Supervisor",
-      description: "Keltice Oriental",
+      title: "Greenline WordPress Delivery",
+      description: "Responsive service website, forms, REST API, Docker, QA and tracking concepts.",
       imgUrl: projImg2,
     },
     {
-      title: "Inventory Coordinator",
-      description: "StoneBridge",
+      title: "Personal Portfolio Website",
+      description: "React portfolio with component sections, Bootstrap layout, routing and animations.",
       imgUrl: projImg3,
     },
   ];
@@ -35,38 +34,34 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Working and Study Experience</h2>
-                <p>I have extensive experience in project management and resource allocation at Aircool, overseeing air conditioning installation and maintenance projects. I excel in communication, coordination with stakeholders, and problem-solving to ensure project success. Previously, at StoneBridge, I managed inventory using ERP systems, achieving high productivity and accuracy in inventory management. I also gained hospitality management experience at Keltice Oriental. Recently, I participated in the Victorian Government's Digital Jobs Program, becoming proficient in React, JavaScript, and Tailwind CSS. I've also completed internships and obtained certifications in data analytics and Azure fundamentals.</p>
+                <h2>Selected Front-End Projects</h2>
+                <p>These projects show my current front-end direction: React interfaces, API-backed user flows, responsive public-facing websites, online forms, website QA, accessibility-minded checks and analytics/tracking workflows.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Working Experience</Nav.Link>
+                      <Nav.Link eventKey="first">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Study Experience</Nav.Link>
+                      <Nav.Link eventKey="second">Education</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                        {projects.map((project, index) => (
+                          <ProjectCard
+                            key={index}
+                            {...project}
+                          />
+                        ))}
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <div>
                         <ul>
-                          <li>Web development (React) ------Digital jobs Program------02/2024-06/2024</li>
-                          <li>Master of Information Technology and Systems ------University Of Tasmania, Hobart------07/2017-08/2019</li>
-                          <li>Bachelor of Logistic Management------Dalian Jiaotong University------10/2008-06/2012</li>
+                          <li>React Development - General Assembly - 02/2024 to 06/2024</li>
+                          <li>Master of Information Technology and Systems - University of Tasmania - 07/2017 to 07/2019</li>
+                          <li>Ongoing practice: TypeScript, Next.js, REST API integration and dashboard/chart interfaces</li>
                         </ul>
                       </div>
                     </Tab.Pane>
@@ -77,7 +72,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="Decorative background" />
     </section>
   )
 }
