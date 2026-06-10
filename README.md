@@ -1,39 +1,78 @@
-# Personal Portfolio Website in React
+# Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React portfolio website built to present professional experience, project work and contact pathways in a responsive single-page interface.
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="src/assets/img/website.png">
+The project demonstrates practical front-end skills including React component structure, reusable page sections, responsive layout, animation, routing support, Bootstrap-based styling, and contact/subscription integrations.
 
-Built using:
+## Key Features
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+- React single-page portfolio structure
+- Component-based sections for navigation, banner, skills, projects, contact and footer
+- Responsive layout using React Bootstrap and Bootstrap
+- Animated page sections with Animate.css and viewport visibility triggers
+- Project cards and tabbed experience sections
+- Contact and subscription-related integrations using React and supporting packages
+- Production build workflow through Create React App
 
-In the /personal-portfolio, you can run:
+## Technology Stack
 
-### `npm start`
+- React 18
+- JavaScript
+- React Bootstrap
+- Bootstrap
+- React Router
+- Animate.css
+- React On Screen
+- React Multi Carousel
+- Nodemailer / contact workflow support
+- Mailchimp subscription support
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Why This Project Matters
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is relevant to front-end web roles because it demonstrates:
 
-### `npm test`
+- Component-based interface design
+- Responsive web layout
+- User-facing portfolio content structure
+- Reusable UI sections
+- Front-end styling and animation
+- Basic integration thinking for contact and subscription workflows
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Local Setup
 
-### `npm run build`
+```bash
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then open:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```text
+http://localhost:3000
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Available Scripts
 
-# personal-portfolio
-personal-portfolio
+```bash
+npm start
+npm test
+npm run build
+```
+
+## Project Structure
+
+```text
+src/components/   Reusable React page sections
+src/assets/       Images and visual assets
+src/App.js        Main application composition
+src/App.css       Main styling
+```
+
+## Notes
+
+This portfolio was originally created as a React learning and presentation project. It is being maintained as supporting evidence for front-end development capability, alongside more technical projects such as the Spotify Next.js API interface and Greenline WordPress delivery project.
+
+## Repository Owner
+
+Meisi Xu  
+GitHub: https://github.com/kate666kate
