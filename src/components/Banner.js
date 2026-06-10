@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Junior Web Developer", "Service Coordinator" ];
+  const toRotate = [ "Front-End Web Developer", "React Developer", "Digital Interface Builder" ];
   const period = 2000;
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -45,20 +45,27 @@ export const Banner = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-  }
+  };
+
+  const scrollToProjects = () => {
+    const projects = document.getElementById('projects');
+    if (projects) {
+      projects.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Meisi`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Junior Web Developer", "Service Coordinator"]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am an experienced and results-driven Coordinator and Inventory Officer with 6 years of experience in fast-paced office settings. I possess efficient work productivity and excellent stakeholder engagement skills. Proficient in JavaScript and React, and familiar with Tailwind CSS, I am seeking an entry-level internship position as a Front-End Engineer where I can contribute my skills in strategic planning, team leadership, and creative problem-solving to achieve business objectives. </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <span className="tagline">Front-end portfolio</span>
+                <h1>{`Hi, I'm Meisi Xu, `}<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Front-End Web Developer", "React Developer", "Digital Interface Builder" ]'><span className="wrap">{text}</span></span></h1>
+                <p>I build responsive, user-centred web interfaces using React, JavaScript, HTML and CSS. My project work includes a Next.js Spotify API interface, a WordPress delivery environment with REST API and tracking concepts, and practical website QA, forms and stakeholder-facing digital workflows.</p>
+                <button onClick={scrollToProjects}>View Projects <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
@@ -66,7 +73,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Front-end developer illustration" />
                 </div>}
             </TrackVisibility>
           </Col>
