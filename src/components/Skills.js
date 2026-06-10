@@ -1,16 +1,11 @@
 import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -28,37 +23,36 @@ export const Skills = () => {
     }
   };
 
+  const skills = [
+    "React / JavaScript",
+    "HTML / CSS / Responsive UI",
+    "Next.js / API Interfaces",
+    "Website QA / Accessibility",
+    "GA4 / GTM / Analytics",
+    "Docker / WordPress Delivery"
+  ];
+
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>My technical skills include HTML, CSS, JavaScript, React, Tailwind CSS, SQL, Xero, Odoo, ServiceM8, and ERP systems. Additionally, I have strong proficiency in Microsoft Office. My soft skills encompass project management, teamwork, time management, leadership, effective communication, and critical thinking.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Data Analysis</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Project Management</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Effective Communication</h5>
-                            </div>
-                        </Carousel>
-                    </div>
-                </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Skills</h2>
+              <p>I focus on practical front-end delivery: responsive interfaces, React components, API-backed user journeys, website quality checks, accessible publishing patterns, forms and analytics-informed improvements.</p>
+              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                {skills.map((skill) => (
+                  <div className="item" key={skill}>
+                    <img src={meter1} alt="Skill meter" />
+                    <h5>{skill}</h5>
+                  </div>
+                ))}
+              </Carousel>
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Decorative background" />
     </section>
   )
 }
