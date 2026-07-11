@@ -10,18 +10,24 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
   const projects = [
     {
-      title: "Spotify Next.js API Interface",
-      description: "React, Next.js, Express and Spotify Web API authentication flow.",
+      title: "WordPress Demo Environment",
+      description: "Multi-page website workflow for publishing, forms, mobile QA, SEO fields, plugin-aware testing and handover notes.",
+      outcome: "Shows I can manage WordPress beyond simple content edits.",
+      tags: ["WordPress", "Forms", "SEO", "QA"],
       imgUrl: projImg1,
     },
     {
-      title: "Greenline WordPress Delivery",
-      description: "Responsive service website, forms, REST API, Docker, QA and tracking concepts.",
+      title: "Shopify Product Journey",
+      description: "Product content and option clarity, merchandising logic, abandoned-cart follow-up and conversion pathway checks.",
+      outcome: "Shows how I use content and analytics to reduce purchase friction.",
+      tags: ["Shopify", "Products", "EDM", "Conversion"],
       imgUrl: projImg2,
     },
     {
-      title: "Personal Portfolio Website",
-      description: "React portfolio with component sections, Bootstrap layout, routing and animations.",
+      title: "Digital Growth Portfolio",
+      description: "This React showcase packaged in Docker for interview demos, with focused role-fit content and responsive presentation.",
+      outcome: "Shows I can package and present digital work clearly.",
+      tags: ["React", "Docker", "Nginx", "Demo"],
       imgUrl: projImg3,
     },
   ];
@@ -34,15 +40,15 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Selected Front-End Projects</h2>
-                <p>These projects show my current front-end direction: React interfaces, API-backed user flows, responsive public-facing websites, online forms, website QA, accessibility-minded checks and analytics/tracking workflows.</p>
+                <h2>Selected Digital Showcase</h2>
+                <p>These examples are structured for an interview conversation: what the business needed, what I would show on screen, how I would QA it, and how I would measure whether it helped generate better leads.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Projects</Nav.Link>
+                      <Nav.Link eventKey="first">Showcase</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Education</Nav.Link>
+                      <Nav.Link eventKey="second">Proof points</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -59,9 +65,11 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <div>
                         <ul>
-                          <li>React Development - General Assembly - 02/2024 to 06/2024</li>
-                          <li>Master of Information Technology and Systems - University of Tasmania - 07/2017 to 07/2019</li>
-                          <li>Ongoing practice: TypeScript, Next.js, REST API integration and dashboard/chart interfaces</li>
+                          <li><strong>Website scale:</strong> supported 30+ websites across multiple brands, branches and stakeholder groups.</li>
+                          <li><strong>Analytics:</strong> used GA4 and GTM to find where users dropped off and which actions needed clearer tracking.</li>
+                          <li><strong>Lead generation:</strong> helped standardise enquiry forms and improved enquiries by 20% in one example.</li>
+                          <li><strong>Technical base:</strong> WordPress, Shopify, HTML/CSS, React, Docker, SEO checks and accessibility-minded QA.</li>
+                          <li><strong>Education:</strong> Master of Information Technology and Systems, University of Tasmania.</li>
                         </ul>
                       </div>
                     </Tab.Pane>
