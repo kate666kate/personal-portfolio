@@ -1,18 +1,19 @@
-# Personal Portfolio Website
+# Meisi Xu Digital Growth Portfolio
 
-A React portfolio website built to present professional experience, project work and contact pathways in a responsive single-page interface.
+A React portfolio website built for interview demonstration. It presents Meisi Xu as a website and digital marketing specialist with experience across WordPress, Shopify, SEO, GA4/GTM, website QA, campaign support and stakeholder coordination.
 
-The project demonstrates practical front-end skills including React component structure, reusable page sections, responsive layout, animation, routing support, Bootstrap-based styling, and contact/subscription integrations.
+The project is designed to be opened during an interview and used as a structured demo: business context, front-end result, working method and growth follow-up.
 
 ## Key Features
 
-- React single-page portfolio structure
-- Component-based sections for navigation, banner, skills, projects, contact and footer
-- Responsive layout using React Bootstrap and Bootstrap
-- Animated page sections with Animate.css and viewport visibility triggers
-- Project cards and tabbed experience sections
-- Contact and subscription-related integrations using React and supporting packages
-- Production build workflow through Create React App
+- Interview-ready single-page portfolio structure
+- Digital growth positioning for website and marketing roles
+- Showcase cards for WordPress, Shopify and portfolio delivery
+- Skills section covering website management, SEO, analytics, QA and campaign support
+- Role-fit and working-flow sections for interview storytelling
+- Demo-flow section for live interview walkthroughs
+- Responsive React Bootstrap layout with animation
+- Docker production preview served through Nginx
 
 ## Technology Stack
 
@@ -24,19 +25,19 @@ The project demonstrates practical front-end skills including React component st
 - Animate.css
 - React On Screen
 - React Multi Carousel
-- Nodemailer / contact workflow support
-- Mailchimp subscription support
+- Docker
+- Nginx
 
 ## Why This Project Matters
 
-This project is relevant to front-end web roles because it demonstrates:
+This project is relevant to digital growth and marketing technology roles because it demonstrates:
 
-- Component-based interface design
-- Responsive web layout
-- User-facing portfolio content structure
-- Reusable UI sections
-- Front-end styling and animation
-- Basic integration thinking for contact and subscription workflows
+- Website and campaign positioning
+- User-facing content structure
+- Responsive portfolio presentation
+- Practical demo framing for WordPress and Shopify work
+- Analytics, QA and stakeholder workflow awareness
+- A repeatable workflow for website and marketing delivery
 
 ## Local Setup
 
@@ -49,6 +50,27 @@ Then open:
 
 ```text
 http://localhost:3000
+```
+
+## Docker Preview
+
+Build the static site, then run the interview demo in Docker:
+
+```bash
+npm run build
+docker compose up -d
+```
+
+Then open:
+
+```text
+http://localhost:8088
+```
+
+Stop the container:
+
+```bash
+docker compose down
 ```
 
 ## Available Scripts
@@ -70,7 +92,7 @@ src/App.css       Main styling
 
 ## Notes
 
-This portfolio was originally created as a React learning and presentation project. It is being maintained as supporting evidence for front-end development capability, alongside more technical projects such as the Spotify Next.js API interface and Greenline WordPress delivery project.
+This portfolio was originally created as a React learning and presentation project. It is now maintained as a practical interview demo for website management, digital marketing and growth-focused web delivery roles.
 
 ## Repository Owner
 
