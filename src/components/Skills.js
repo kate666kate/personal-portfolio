@@ -24,12 +24,12 @@ export const Skills = () => {
   };
 
   const skills = [
-    "React / JavaScript",
-    "HTML / CSS / Responsive UI",
-    "Next.js / API Interfaces",
-    "Website QA / Accessibility",
-    "GA4 / GTM / Analytics",
-    "Docker / WordPress Delivery"
+    "WordPress: pages, forms, plugins, mobile QA",
+    "Shopify: products, options, content and EDM",
+    "SEO + GA4/GTM: performance and lead tracking",
+    "Website QA: accessibility, links and user paths",
+    "Campaigns: launches, collateral and events",
+    "HTML/CSS + Docker: practical demo delivery"
   ];
 
   return (
@@ -38,8 +38,8 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>I focus on practical front-end delivery: responsive interfaces, React components, API-backed user journeys, website quality checks, accessible publishing patterns, forms and analytics-informed improvements.</p>
+              <h2>Website, Digital and Marketing Skills</h2>
+              <p>I bring a balanced technical and marketing skill set: enough web capability to manage platforms and QA confidently, plus enough marketing judgement to connect content, campaigns and sales enquiries.</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 {skills.map((skill) => (
                   <div className="item" key={skill}>
