@@ -10,7 +10,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "WordPress Website Manager", "Shopify Content Specialist", "Digital Growth Marketer" ];
+  const toRotate = [ "Digital Growth Specialist", "WordPress & Shopify Marketer", "SEO and Analytics Operator" ];
   const period = 2000;
 
   useEffect(() => {
@@ -61,9 +61,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Interview-ready digital marketing showcase</span>
-                <h1>{`Hi, I'm Meisi Xu, `}<span className="txt-rotate" data-period="1000" data-rotate='[ "WordPress Website Manager", "Shopify Content Specialist", "Digital Growth Marketer" ]'><span className="wrap">{text}</span></span></h1>
-                <p>I manage websites as business assets: keeping WordPress and Shopify content accurate, improving SEO and forms, tracking user behaviour with GA4/GTM, and supporting campaigns, launches and events that generate stronger leads.</p>
+                <span className="tagline">Website management, SEO, campaigns and lead generation</span>
+                <h1>{`Digital Growth & Website Marketing Specialist `}<span className="txt-rotate" data-period="1000" data-rotate='[ "Digital Growth Specialist", "WordPress & Shopify Marketer", "SEO and Analytics Operator" ]'><span className="wrap">{text}</span></span></h1>
+                <p>I manage websites as business assets: keeping WordPress and Shopify content accurate, improving SEO and forms, tracking user behaviour with GA4/GTM, and supporting campaigns, product launches and events that generate stronger leads.</p>
                 <div className="hero-proof">
                   <span>30+ websites supported</span>
                   <span>20% enquiry uplift example</span>
